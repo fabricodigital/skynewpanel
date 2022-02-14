@@ -1,0 +1,46 @@
+//VENDOR
+@import '~jquery-ui-dist/jquery-ui.css';
+@import '~jquery-ui-dist/jquery-ui.structure.css';
+@import '~jquery-ui-dist/jquery-ui.theme.css';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~animate.css/animate';
+@import '~font-awesome/scss/font-awesome';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import '~select2/dist/css/select2';
+@import '~sweetalert2/dist/sweetalert2';
+@import '~datatables.net-bs/css/dataTables.bootstrap';
+@import '~datatables.mark.js/dist/datatables.mark';
+@import '~bootstrap-daterangepicker/daterangepicker.css';
+@import '~morris.js/morris';
+@import '~admin-lte/dist/css/AdminLTE';
+@import '~admin-lte/dist/css/skins/skin-green-light';
+@import "~flag-icon-css/css/flag-icon.css";
+@import "~cropperjs/dist/cropper.css";
+@import "~fullcalendar/dist/fullcalendar.css";
+@import "~bootstrap-colorselector/dist/bootstrap-colorselector.min.css";
+@import "~icheck/skins/square/_all.css";
+@import "vendor/iosCheckbox/iosCheckbox";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+@import "~gridstack/dist/gridstack.css";
+@import "~summernote/dist/summernote.css";
+
+//BASE
+@import "base/fonts";
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+
+//GLOBAL
+@import "global";
+
+//PARTIALS
+@import "partials/sidebar";
+@import "partials/topbar";
+@import "partials/permissions";
+
+//PAGES
+@import "pages/auth";
+@import "pages/errors";
+@import "pages/users";
+@import "pages/messenger";

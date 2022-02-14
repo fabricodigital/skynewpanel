@@ -1,0 +1,17 @@
+.page {
+    &--admin-messenger {
+        .not-read {
+            td {
+                font-weight: bold;
+                .new {
+                    margin: 0 !important;
+                    margin-top: 2px !important;
+                }
+            }
+        }
+        .nav-pills > li > a.active {
+            color: #444;
+            background: #f7f7f7;
+        }
+    }
+}

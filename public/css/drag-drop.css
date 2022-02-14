@@ -1,0 +1,5 @@
+.drag-container.dragging .widget-wrap { pointer-events: none; }
+.drag-item:hover { cursor: move; }
+.drag-item.dragging { cursor: move; opacity: 40%; }
+.drag-item .widget-wrap { border: 2px dashed white; }
+.drag-item.over .widget-wrap { border-color: rgba(0, 0, 0, 0.15); }

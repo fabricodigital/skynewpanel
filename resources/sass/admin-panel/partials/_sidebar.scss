@@ -1,0 +1,14 @@
+.main-sidebar {
+    .user-panel {
+        white-space: normal !important;
+        .info {
+            max-width: 170px;
+        }
+    }
+    .pull-right-container {
+        .label, .fa {
+            margin-right: 5px;
+            margin-bottom: 0 !important;
+        }
+    }
+}

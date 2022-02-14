@@ -1,0 +1,57 @@
+.form-inline-home {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.form-inline-home .form-check {
+    width: 100%
+}
+
+.spacing-padding {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width:576px) {
+    .form-inline-home label {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 0
+    }
+
+    .export-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .widgets-nav-wrapper .nav-link {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        padding-right: 0 !important;
+    }
+
+    .widgets-nav-wrapper ion-icon {
+        font-size: 22px;
+        margin-left: 5px;
+    }
+
+    .datatable-js {
+        height: 530px !important;
+    }
+
+    .button-modal-icon {
+        display: none !important;
+    }

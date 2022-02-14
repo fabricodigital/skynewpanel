@@ -1,0 +1,86 @@
+.permissions {
+    position: relative;
+    .select2-search__field {
+        width: auto !important;
+    }
+    &__table {
+        border-collapse: separate;
+        &-container {
+            width: 100%;
+            max-height: 600px;
+            overflow: auto;
+        }
+        .h-sticky {
+            position: sticky;
+            z-index: 10;
+            min-width: 135px;
+            &--1 {   
+                left: 0px;
+            }
+            &--2 {                
+                left: 135px;
+            }
+            &--3 {                
+                left: 278px;
+            }
+            @include breakpoint($xs){
+                position: relative;
+                min-width: auto;    
+                left: auto !important;
+            }
+        }
+        .v-sticky {
+            position: sticky;
+            z-index: 11;
+            &--1 {                
+                top: 0px;
+            }
+            &--2 {                
+                top: 36px;
+            }
+            &.h-sticky {
+                z-index: 12;
+            }
+        }
+        th {
+            background: #f9fafc;
+            white-space: nowrap;
+        }
+        td {
+            white-space: nowrap;  
+            background: white;                  
+        }
+        tbody {
+            th {
+                vertical-align: top !important;
+                .v-sticky {
+                    &--1 {                
+                        top: 87px;
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                white-space: nowrap;
+                label {
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+.select2-permissions_sections_filter {
+    .select2-results__option[role=group] {
+        padding: 6px;
+    }
+    .select2-results__option .select2-results__option {
+        padding-left: 1.5em;
+    }
+    .select2-results__option {
+        strong {
+            font-weight: normal;
+        }
+    }
+}

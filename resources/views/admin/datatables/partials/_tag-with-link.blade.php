@@ -1,0 +1,1 @@
+<span class="label {{ $labelClasses }}"><a href="{{ $route }}" target="_blank">{{ $text }}</a></span>
