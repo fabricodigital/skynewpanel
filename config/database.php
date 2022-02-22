@@ -55,6 +55,22 @@ return [
             'strict' => false,
             'engine' => 'InnoDB',
         ],
+        // second mysql connection
+        'solopertedev' => [
+            'driver' => 'mysql',
+            'host' => '109.168.125.233',
+            'port' => '3306',
+            'database' => 'solopertedev',
+            'username' => 'sky.extra',
+            'password' => 'VSJVLkrqF8LHy6cF',
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => false,
+            'engine' => 'InnoDB',
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',
