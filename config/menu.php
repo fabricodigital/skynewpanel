@@ -92,6 +92,13 @@ return [
             'sections' => [
                 [
                     'type' => 'link',
+                    'title' => "__('Search')",
+                    'icon' => 'fa-user-circle-o',
+                    'route' => 'admin.user.voucher',
+                    'uri_segments' => [''],
+                ],
+                [
+                    'type' => 'link',
                     'title' => "__('Widgets')",
                     'icon' => 'fa-th-large',
                     'route' => 'admin.widgets.index',
