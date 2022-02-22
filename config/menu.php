@@ -94,7 +94,7 @@ return [
                     'type' => 'link',
                     'title' => "__('Search')",
                     'icon' => 'fa-user-circle-o',
-                    'route' => 'admin.user.voucher',
+                    'route' => 'admin.finclient',
                     'uri_segments' => [''],
                 ],
                 [
