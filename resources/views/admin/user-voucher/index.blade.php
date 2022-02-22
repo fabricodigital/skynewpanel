@@ -18,8 +18,7 @@
                   'width' => 8,
                   'attributes' => ['maxlength' => 25],
               ])
-                    <div class="col-md-6 form-group ">
-                        <label for="name" class="control-label">name*</label>
+                    <div class="col-md-4 form-group ">
                         <button class="form-control btn btn-success" type="submit">Search</button>
 
                 </form>
