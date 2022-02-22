@@ -41,7 +41,7 @@ Route::group(['middleware' => ['auth', 'AccountActivated', 'locale', 'UserLastAc
     Route::get('/accounts/switch-account/{account}', ['uses' => 'AccountController@switchAccount', 'as' => 'accounts.switch-account']);
 
     Route::get('/search', ['uses' => 'UserVoucherController@search', 'as' => 'finclient']);
-    Route::post('/search', ['uses' => 'UserVoucherController@searchClient', 'as' => 'searchclient']);
+    Route::post('/searchclient', ['uses' => 'UserVoucherController@searchClient', 'as' => 'searchclient']);
 
     Route::group(['prefix' => 'messenger', 'as' => 'messenger.'], function () {
         Route::get('/', ['uses' => 'MessengerController@inbox', 'as' => 'index']);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Admin\UserVoucher;
 
 
 class UserVoucherController extends Controller
@@ -16,6 +17,9 @@ class UserVoucherController extends Controller
 
     public function searchClient(Request $request)
     {
-         return $request->get('infocode');
+        $search = $request->get('infocode');
+        if(!empty($search)) {
+            return UserVoucher::where('idSky', '=', $search)->orWhere('codicefiscale', '=', $search)->get();
+        }
     }
 }

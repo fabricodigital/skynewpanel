@@ -12,16 +12,16 @@
         <div class="row ">
             <div class="col-md-12">
                 <form class="" action="{{route('admin.searchclient')}}" method="POST">
-                    {!! csrf_field() !!}
+                    @csrf
                     @include('partials.inputs._text', [
-                  'name' => 'infocode',
-                  'label' => __('name').'*',
-                  'width' => 8,
-                  'attributes' => ['maxlength' => 25],
-              ])
+                        'name' => 'infocode',
+                        'label' => '',
+                        'width' => 8,
+                        'attributes' => ['maxlength' => 25],
+                    ])
                     <div class="col-md-5 form-group ">
                         <button class="form-control btn btn-success" type="submit">Search</button>
-
+                    </div>
                 </form>
             </div>
         </div>
