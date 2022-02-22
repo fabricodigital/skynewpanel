@@ -12,9 +12,12 @@
         <div class="row ">
             <div class="col-md-12">
                 <form class="" action="#" method="get">
-                    <div class="form-group row text-center">
-                        <input class="form-control" type="text" name="search" required/>
-                    </div>
+                    @include('partials.inputs._text', [
+                  'name' => 'name',
+                  'label' => __('name').'*',
+                  'width' => 6,
+                  'attributes' => ['maxlength' => 25],
+              ])
                     <div class="form-group row text-center">
                         <button class="form-control btn btn-success" type="submit">Search</button>
                     </div>
