@@ -90,22 +90,22 @@ return [
             'type' => 'header',
             'title' => "__('ACCOUNT')",
             'sections' => [
-                [
-                    'type' => 'link',
-                    'title' => "__('Widgets')",
-                    'icon' => 'fa-th-large',
-                    'route' => 'admin.widgets.index',
-                    'uri_segments' => ['widgets'],
-                    'permission_class' => \App\Models\Admin\Widget::class,
-                ],
-                [
-                    'type' => 'link',
-                    'title' => "__('Dashboards')",
-                    'icon' => 'fa-dashboard',
-                    'route' => 'admin.dashboards.index',
-                    'uri_segments' => ['dashboards'],
-                    'permission_class' => \App\Models\Admin\Dashboard::class,
-                ],
+//                [
+//                    'type' => 'link',
+//                    'title' => "__('Widgets')",
+//                    'icon' => 'fa-th-large',
+//                    'route' => 'admin.widgets.index',
+//                    'uri_segments' => ['widgets'],
+//                    'permission_class' => \App\Models\Admin\Widget::class,
+//                ],
+//                [
+//                    'type' => 'link',
+//                    'title' => "__('Dashboards')",
+//                    'icon' => 'fa-dashboard',
+//                    'route' => 'admin.dashboards.index',
+//                    'uri_segments' => ['dashboards'],
+//                    'permission_class' => \App\Models\Admin\Dashboard::class,
+//                ],
                 [
                     'type' => 'link',
                     'title' => "__('Profile')",
