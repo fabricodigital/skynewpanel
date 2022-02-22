@@ -11,7 +11,8 @@
     <div class="panel-body">
         <div class="row ">
             <div class="col-md-12">
-                <form class="" action="#" method="get">
+                <form class="" action="{{route('admin.searchclient')}}" method="POST">
+                    {!! csrf_field() !!}
                     @include('partials.inputs._text', [
                   'name' => 'name',
                   'label' => __('name').'*',
