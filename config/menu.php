@@ -7,7 +7,7 @@ return [
             'type' => 'link',
             'title' => "__('Dashboard')",
             'icon' => 'fa-dashboard',
-            'route' => 'admin.homepage',
+            'route' => 'admin.home',
             'uri_segments' => ['']
         ],
         [
