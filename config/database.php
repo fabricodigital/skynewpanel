@@ -58,12 +58,12 @@ return [
         // second mysql connection
         'solopertedev' => [
             'driver' => 'mysql',
-            'host' => '109.168.125.233',
-            'port' => '3306',
-            'database' => 'solopertedev',
-            'username' => 'sky.extra',
-            'password' => 'VSJVLkrqF8LHy6cF',
-            'unix_socket' => env('DB_SOCKET', ''),
+            'host' => env('DB_HOST_TWO'),
+            'port' => env('DB_PORT_TWO'),
+            'database' => env('DB_DATABASE_TWO'),
+            'username' => env('DB_USERNAME_TWO'),
+            'password' => env('DB_PASSWORD_TWO'),
+            'unix_socket' => env('DB_SOCKET_TWO'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
