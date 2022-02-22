@@ -14,7 +14,7 @@
                 <form class="" action="{{route('admin.searchclient')}}" method="POST">
                     {!! csrf_field() !!}
                     @include('partials.inputs._text', [
-                  'name' => 'name',
+                  'name' => 'infocode',
                   'label' => __('name').'*',
                   'width' => 8,
                   'attributes' => ['maxlength' => 25],
