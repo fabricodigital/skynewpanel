@@ -87,6 +87,21 @@ return [
             ]
         ],
         [
+            'type' => 'dropdown',
+            'title' => "__('Operations')",
+            'icon' => 'fa-question',
+            'sections' => [
+                [
+                    'type' => 'link',
+                    'title' => "__('Find client')",
+                    'icon' => 'fa-folder',
+                    'route' => 'admin.findclient',
+                    'uri_segments' => ['findclient'],
+                    'permission_class' => \App\Models\Admin\FaqCategory::class
+                ],
+            ]
+        ],
+        [
             'type' => 'header',
             'title' => "__('ACCOUNT')",
             'sections' => [
