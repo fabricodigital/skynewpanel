@@ -15,12 +15,13 @@
                     @include('partials.inputs._text', [
                   'name' => 'name',
                   'label' => __('name').'*',
-                  'width' => 6,
+                  'width' => 8,
                   'attributes' => ['maxlength' => 25],
               ])
-                    <div class="form-group row text-center">
+                    <div class="col-md-6 form-group ">
+                        <label for="name" class="control-label">name*</label>
                         <button class="form-control btn btn-success" type="submit">Search</button>
-                    </div>
+
                 </form>
             </div>
         </div>
