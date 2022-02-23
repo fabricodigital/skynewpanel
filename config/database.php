@@ -58,7 +58,7 @@ return [
         // second mysql connection
         'solopertedev' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST_TWO' ),
+            'host' => env('DB_HOST_TWO'),
             'port' => env('DB_PORT_TWO'),
             'database' => env('DB_DATABASE_TWO'),
             'username' => env('DB_USERNAME_TWO'),
