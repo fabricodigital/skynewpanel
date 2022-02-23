@@ -44,7 +44,7 @@ class UserVoucherController extends Controller
             );
 
             // dd($getPromotions);
-            return view('admin.user-voucher.index', compact('uservouch'));
+            return view('admin.user-voucher.index', compact('uservouch', 'getPromotions'));
 
         }
     }
