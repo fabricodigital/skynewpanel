@@ -22,9 +22,10 @@ class UserVoucherController extends Controller
         if(!empty($search)) {
             $uservouch =  UserVoucher::where('idSky', '=', $search)->orWhere('codicefiscale', '=', $search)->first();
 
-            $getPromotions = DB::select(
+            $getPromotions = DB::connection('solopertedev')->select(
                 "SELECT * FROM elencopromozioni"
             );
+
 
             return $getPromotions;
 
