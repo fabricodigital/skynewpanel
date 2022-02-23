@@ -43,8 +43,8 @@ class UserVoucherController extends Controller
                             ORDER BY tipologia_abbonamento_new.posizione ASC,e.id desc,tipologia_abbonamento_new.nome asc"
             );
 
-
-            return $getPromotions;
+            // dd($getPromotions);
+            return view('admin.user-voucher.index', compact('uservouch'));
 
         }
     }

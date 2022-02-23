@@ -11,7 +11,7 @@
     <div class="panel-body">
         <div class="row ">
             <div class="col-md-12">
-                <form class="" action="{{route('admin.searchclient')}}" method="POST">
+                <form class="col-md-12" action="{{route('admin.searchclient')}}" method="POST">
                     @csrf
                     @include('partials.inputs._text', [
                         'name' => 'infocode',
@@ -25,6 +25,9 @@
                 </form>
             </div>
         </div>
+        @isset($uservouch)
+            @include('admin.user-voucher.partials._tables-result')
+        @endisset
     </div>
 </div>
 
