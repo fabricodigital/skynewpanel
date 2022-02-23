@@ -9,17 +9,17 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
-        <div class="row ">
-            <div class="col-md-12">
-                <form class="col-md-12" action="{{route('admin.searchclient')}}" method="POST">
+        <div class="row">
+            <div class="">
+                <form class="col-md-6 col-md-offset-3" action="{{route('admin.searchclient')}}" method="POST">
                     @csrf
                     @include('partials.inputs._text', [
                         'name' => 'infocode',
                         'label' => '',
-                        'width' => 8,
+                        'width' => 10,
                         'attributes' => ['maxlength' => 25],
                     ])
-                    <div class="col-md-5 form-group ">
+                    <div class="col-md-6 col-md-offset-2 form-group ">
                         <button class="form-control btn btn-success" type="submit">Search</button>
                     </div>
                 </form>
