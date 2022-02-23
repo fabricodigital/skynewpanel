@@ -22,14 +22,11 @@ class UserVoucherController extends Controller
         if(!empty($search)) {
             $uservouch =  UserVoucher::where('idSky', '=', $search)->orWhere('codicefiscale', '=', $search)->first();
 
-            $getWidgets = DB::select(
-                "SELECT distinct sv.codice,u.lista,u.cluster,u.tempo_contratto,'' as 'fatturazione',e.nome,tipologia_abbonamento_new.tipologia,u.`idSky`,u.promozione,pd.descrizione,'' as checknewpromo,
-
-            ''  as checknewpromo2,
-
+            $getPromotions = DB::select(
+                "SELECT distinct sv.codice,u.lista,u.cluster,u.tempo_contratto,e.nome,tipologia_abbonamento_new.tipologia,u.`idSky`,u.promozione,pd.descrizione as checknewpromo, 
             (select codice from codici where idSky=$uservouch->idSky and type = 14545  LIMIT 0,1) as checknewpromo3
 
-            FROM elencopromozioni e
+            FROM 'elencopromozioni' e
 
             INNER JOIN `utentivoucher` u ON e.`abbr` = u.`promozione` AND u.`idSky` = $uservouch->idSky
 
