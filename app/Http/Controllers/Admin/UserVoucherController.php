@@ -29,7 +29,7 @@ class UserVoucherController extends Controller
 
             (select codice from codici where idSky=$uservouch->idSky and type = 14545  LIMIT 0,1) as checknewpromo3
 
-            FROM 'elencopromozioni' e
+            FROM elencopromozioni e
 
             INNER JOIN `utentivoucher` u ON e.`abbr` = u.`promozione` AND u.`idSky` = $uservouch->idSky
 
