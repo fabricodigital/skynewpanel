@@ -9,8 +9,6 @@ trait PromotionRevisionable
     use Revisionable;
 
 
-    protected $connection = 'mysql';
-
 
     protected $revisionableAttributes = ['nome'];
 

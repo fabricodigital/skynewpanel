@@ -11,7 +11,7 @@ use App\Traits\Revisionable\Admin\PromotionRevisionable;
 class Promotion extends Model
 {
     use PromotionDataTable;
-    use PromotionRevisionable;
+   // use PromotionRevisionable;
     use PromotionTranslation;
     use SoftDeletes;
 
