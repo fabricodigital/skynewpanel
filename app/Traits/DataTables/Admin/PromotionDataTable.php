@@ -33,7 +33,10 @@ trait PromotionDataTable
         $selectRows = [
             'id'    => 'id',
             'nome' => 'nome',
-            'abbr' => 'abbr'
+            'abbr'  => 'abbr',
+            'datainizio'    => 'datainizio',
+            'datafine'      => 'datafine',
+            'tipologiaskyservice' => 'tipologiaskyservice',
         ];
 
         if (Auth::user()->can('view_deleted', self::class)) {
@@ -174,11 +177,23 @@ trait PromotionDataTable
                         'raw' => true
                     ],
                     [
-                        'data' => 'nome', 'className' => 'dt_col_nome', 'label' => self::getAttrsTrans('nome'),
+                        'data' => 'nome', 'className' => 'dt_col_nome', 'label' => 'nome',
                         'filter' => [ 'type' => "search" ]
                     ],
                     [
-                        'data' => 'abbr', 'className' => 'dt_col_abbr', 'label' => __('abbr'),
+                        'data' => 'abbr', 'className' => 'dt_col_abbr', 'label' => 'abbr',
+                        'filter' => [ 'type' => "search" ]
+                    ],
+                    [
+                        'data' => 'datainizio', 'className' => 'dt_col_datainizio', 'label' => 'Data Inizio',
+                        'filter' => [ 'type' => "search" ]
+                    ],
+                    [
+                        'data' => 'datafine', 'className' => 'dt_col_datafine', 'label' => 'Data Fine',
+                        'filter' => [ 'type' => "search" ]
+                    ],
+                    [
+                        'data' => 'tipologiaskyservice', 'className' => 'dt_col_tipologiaskyservice', 'label' => 'tipologiaskyservice',
                         'filter' => [ 'type' => "search" ]
                     ],
                 ],
