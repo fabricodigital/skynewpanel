@@ -26,6 +26,7 @@ class AuthServiceProvider extends ServiceProvider
         'App\Models\Admin\Export' => 'App\Policies\Admin\ExportPolicy',
         'App\Models\Admin\Permission' => 'App\Policies\Admin\PermissionPolicy',
         /* crud:create add policy */
+        'App\Models\Admin\Promotion' => 'App\Policies\Admin\PromotionPolicy',
         'App\Models\Admin\Note' => 'App\Policies\Admin\NotePolicy',
         'App\Models\Admin\Dashboard' => 'App\Policies\Admin\DashboardPolicy',
         'App\Models\Admin\Widget' => 'App\Policies\Admin\WidgetPolicy',

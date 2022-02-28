@@ -34,6 +34,7 @@ Route::group(['middleware' => ['auth', 'AccountActivated', 'locale', 'UserLastAc
     Route::get('dashboard/show/{dashboard}', ['uses' => 'DashboardUserController@show', 'as' => 'dashboard.show']);
 
     /* crud:create add resource route */
+    Route::resource('promotions', 'PromotionController');
     Route::resource('notes', 'NoteController');
     Route::resource('dashboards', 'DashboardController');
     Route::resource('widgets', 'WidgetController');
@@ -129,6 +130,7 @@ Route::group(['middleware' => ['auth', 'AccountActivated', 'locale', 'UserLastAc
         Route::post('exports', ['uses' => 'ExportController@datatable', 'as' => 'exports']);
 
         /* crud:create add datatable route */
+        Route::post('promotions', ['uses' => 'PromotionController@datatable', 'as' => 'promotions']);
         Route::post('notes', ['uses' => 'NoteController@datatable', 'as' => 'notes']);
         Route::post('dashboards', ['uses' => 'DashboardController@datatable', 'as' => 'dashboards']);
         Route::post('widgets', ['uses' => 'WidgetController@datatable', 'as' => 'widgets']);
@@ -144,6 +146,7 @@ Route::group(['middleware' => ['auth', 'AccountActivated', 'locale', 'UserLastAc
         Route::post('notifications/restore/{id}', ['uses' => 'NotificationController@restore', 'as' => 'notifications.restore']);
 
         /* crud:create add restore route */
+        Route::post('promotions/restore/{id}', ['uses' => 'PromotionController@restore', 'as' => 'promotions.restore']);
         Route::post('notes/restore/{id}', ['uses' => 'NoteController@restore', 'as' => 'notes.restore']);
         Route::post('dashboards/restore/{id}', ['uses' => 'DashboardController@restore', 'as' => 'dashboards.restore']);
         Route::post('widgets/restore/{id}', ['uses' => 'WidgetController@restore', 'as' => 'widgets.restore']);

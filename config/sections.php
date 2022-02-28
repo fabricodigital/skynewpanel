@@ -210,6 +210,24 @@ return [
     ],
     /* crud:create add section */
     [
+        'label' => "__('Promotions')",
+        'permission_target' => 'promotions',
+        'permissions' => [
+            'create' => "__('create-permission')",
+            'view_all' => "__('view_all-permission')",
+            'view_own' => "__('view_own-permission')",
+            'view_deleted' => "__('view_deleted-permission')",
+            'update_all' => "__('update_all-permission')",
+            'update_own' => "__('update_own-permission')",
+            'delete_all' => "__('delete_all-permission')",
+            'delete_own' => "__('delete_own-permission')",
+            'delete_forever' => "__('delete_forever-permission')",
+            'restore_all' => "__('restore_all-permission')",
+            'restore_own' => "__('restore_own-permission')",
+            'export' => "__('export-permission')",
+        ]
+    ],
+    [
         'label' => "__('Notes')",
         'permission_target' => 'notes',
         'permissions' => [
