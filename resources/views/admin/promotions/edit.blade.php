@@ -14,6 +14,9 @@
             <div class="row">
                 @include('partials.inputs._text', ['name' => 'nome', 'label' => $promotion::getAttrsTrans('nome').'*'])
             </div>
+            <div class="row">
+                @include('partials.inputs._text', ['name' => 'abbr', 'label' => __('abbr').'*'])
+            </div>
 
         </div>
     </div>

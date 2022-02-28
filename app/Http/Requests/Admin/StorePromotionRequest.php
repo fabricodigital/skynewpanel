@@ -36,7 +36,8 @@ class StorePromotionRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required|string|max:191'
+            'nome' => 'required|string|max:191',
+            'abbr' => 'required|string|max:191',
         ];
     }
 }
