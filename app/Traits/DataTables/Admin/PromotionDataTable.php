@@ -33,6 +33,7 @@ trait PromotionDataTable
         $selectRows = [
             'id'    => 'id',
             'nome' => 'nome',
+            'abbr' => 'abbr'
         ];
 
         if (Auth::user()->can('view_deleted', self::class)) {
@@ -174,6 +175,10 @@ trait PromotionDataTable
                     ],
                     [
                         'data' => 'nome', 'className' => 'dt_col_nome', 'label' => self::getAttrsTrans('nome'),
+                        'filter' => [ 'type' => "search" ]
+                    ],
+                    [
+                        'data' => 'abbr', 'className' => 'dt_col_abbr', 'label' => self::getAttrsTrans('abbr'),
                         'filter' => [ 'type' => "search" ]
                     ],
                 ],
