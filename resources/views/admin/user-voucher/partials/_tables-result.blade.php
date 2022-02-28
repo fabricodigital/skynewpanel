@@ -31,7 +31,12 @@
                 @foreach ($getPromotions as $promotion)
                     <tr>
                         <td>{{ $promotion->nome }}</td>
-                        <td> - </td>
+                        <td>
+                            <a href="#" id="pop">
+                                <img id="imageresource" src="http://patyshibuya.com.br/wp-content/uploads/2014/04/04.jpg" style="width: 400px; height: 264px;">
+                                Click to Enlarge
+                            </a>
+                        </td>
                         <td> - </td>
                         <td> - </td>
                     </tr>
