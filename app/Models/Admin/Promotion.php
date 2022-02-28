@@ -15,7 +15,7 @@ class Promotion extends Model
     use PromotionDataTable;
     use PromotionRevisionable;
     use PromotionTranslation;
-    use SoftDeletes;
+    //use SoftDeletes;
 
 
     protected $connection = 'solopertedev';
