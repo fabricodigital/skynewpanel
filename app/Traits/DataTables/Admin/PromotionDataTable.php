@@ -178,7 +178,7 @@ trait PromotionDataTable
                         'filter' => [ 'type' => "search" ]
                     ],
                     [
-                        'data' => 'abbr', 'className' => 'dt_col_abbr', 'label' => self::getAttrsTrans('abbr'),
+                        'data' => 'abbr', 'className' => 'dt_col_abbr', 'label' => __('abbr'),
                         'filter' => [ 'type' => "search" ]
                     ],
                 ],
