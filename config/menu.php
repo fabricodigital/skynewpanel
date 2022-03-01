@@ -90,21 +90,25 @@ return [
             'type' => 'header',
             'title' => "__('Services')",
             'sections' => [
-        [
-            'type' => 'link',
-            'title' => "__('Search')",
-            'icon' => 'fa-user-circle-o',
-            'route' => 'admin.finclient',
-            'uri_segments' => [''],
-        ],
-        [
-            'type' => 'link',
-            'title' => "__('Promotions')",
-            'icon' => 'fa-user-circle-o',
-            'route' => 'admin.promotions.index',
-            'uri_segments' => ['promotions'],
-        ],
+                [
+                    'type' => 'link',
+                    'title' => "__('Search')",
+                    'icon' => 'fa-user-circle-o',
+                    'route' => 'admin.finclient',
+                    'uri_segments' => [''],
                 ],
+                [
+                    'type' => 'link',
+                    'title' => "__('Promotions')",
+                    'icon' => 'fa-user-circle-o',
+                    'route' => 'admin.promotions.index',
+                    'uri_segments' => ['promotions'],
+                ],
+
+
+            ]
+        ],
+
         [
             'type' => 'header',
             'title' => "__('ACCOUNT')",
