@@ -29,6 +29,8 @@ Route::group(['middleware' => ['auth', 'AccountActivated', 'locale', 'UserLastAc
     Route::resource('notifications', 'NotificationController');
     Route::post('/savenotes', ['uses' => 'NoteController@storeFromHomepage', 'as' => 'savenotes']);
 
+    Route::get('order-promotion', ['uses' => 'PromotionController@orderPromotion', 'as' => 'orderpromotion']);
+
     /* Dashboard templates view, add and remove routes */
     Route::get('dashboard', ['uses' => 'DashboardUserController@index', 'as' => 'dashboard']);
     Route::get('dashboard/show/{dashboard}', ['uses' => 'DashboardUserController@show', 'as' => 'dashboard.show']);

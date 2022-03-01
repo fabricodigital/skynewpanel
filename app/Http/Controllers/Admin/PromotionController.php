@@ -170,4 +170,11 @@ class PromotionController extends Controller
             'message' => __("The export will run in background! When it's done we will notify you via email!")
         ]);
     }
+
+    public function orderPromotion()
+    {
+         $promotions = Promotion::query()->get();
+
+         return view('admin.promotions.order',compact('promotions'));
+    }
 }
