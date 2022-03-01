@@ -22,7 +22,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="pull-right">
-                    {{$pomotionsCount}}
+                    <h4>{{$promotionsCount}}</h4>
                 </div>
                 <div class="col-lg-10"  id="image-list" >
                     @foreach($promotions as $p)
