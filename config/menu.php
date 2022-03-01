@@ -104,6 +104,13 @@ return [
                     'route' => 'admin.promotions.index',
                     'uri_segments' => ['promotions'],
                 ],
+                [
+                    'type' => 'link',
+                    'title' => "__('Order promo')",
+                    'icon' => 'glyphicon glyphicon-file',
+                    'route' => 'admin.promotions.index',
+                    'uri_segments' => ['promotions'],
+                ],
 
 
             ]
