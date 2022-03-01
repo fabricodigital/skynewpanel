@@ -87,6 +87,10 @@ return [
             ]
         ],
         [
+            'type' => 'header',
+            'title' => "__('Services')",
+            'sections' => [
+        [
             'type' => 'link',
             'title' => "__('Search')",
             'icon' => 'fa-user-circle-o',
@@ -100,6 +104,7 @@ return [
             'route' => 'admin.promotions.index',
             'uri_segments' => ['promotions'],
         ],
+                ],
         [
             'type' => 'header',
             'title' => "__('ACCOUNT')",
