@@ -29,6 +29,14 @@ trait PromotionTranslation
                         1 => __('Yes')
                     ]
                 ],
+                'tipologiaskyservice' => [
+                    'translation'   => __('tipologiaskyservice'),
+                    'enum_translations' => [
+                        'service' => __('Service'),
+                        'center' => __('Center'),
+                        'service/center' => __('Service/Center'),
+                    ]
+                ]
             ]
         ];
     }

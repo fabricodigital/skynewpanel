@@ -20,4 +20,6 @@ class Promotion extends Model
     protected $table = 'elencopromozioni';
 
     protected $guarded = [];
+
+    protected $dates = ['datainizio', 'datafine'];
 }

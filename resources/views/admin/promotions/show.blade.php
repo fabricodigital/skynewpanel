@@ -14,6 +14,22 @@
                             <th>{{ $promotion::getAttrsTrans('nome') }}</th>
                             <td field-key='nome'>{{ $promotion->nome }}</td>
                         </tr>
+                        <tr>
+                            <th>{{ __('abbr') }}</th>
+                            <td field-key='abbr'>{{ $promotion->abbr }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ __('Data inizio') }}</th>
+                            <td field-key='datainizio'>{{ $promotion->datainizio }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ __('Data fine') }}</th>
+                            <td field-key='datafine'>{{ $promotion->datafine }}</td>
+                        </tr>
+                        <tr>
+                            <th>{{ __('tipologiaskyservice') }}</th>
+                            <td field-key='tipologiaskyservice'>{{ $promotion->tipologiaskyservice }}</td>
+                        </tr>
                     </table>
                 </div>
             </div>

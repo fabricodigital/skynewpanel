@@ -17,7 +17,30 @@
             <div class="row">
                 @include('partials.inputs._text', ['name' => 'abbr', 'label' => __('abbr').'*'])
             </div>
-
+            <div class="row">
+                @include('partials.inputs._date-time-picker', [
+                    'name' => 'datainizio',
+                    'value' => $promotion->datainizio->format('d/m/Y H:i'),
+                    'label' => __('Data inizio').'*',
+                    'width' => 6
+                ])
+            </div>
+            <div class="row">
+                @include('partials.inputs._date-time-picker', [
+                    'name' => 'datafine',
+                    'value' => $promotion->datafine->format('d/m/Y H:i'),
+                    'label' => __('Data fine').'*',
+                    'width' => 6
+                ])
+            </div>
+            <div class="row">
+                @include('partials.inputs._select', [
+                    'name' => 'tipologiaskyservice',
+                    'label' => __('Tipologiaskyservice').'*',
+                    'width' => 4,
+                    'options' => $promotion::getEnumsTrans('tipologiaskyservice'),
+                ])
+            </div>
         </div>
     </div>
 

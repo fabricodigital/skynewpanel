@@ -36,7 +36,10 @@ class UpdatePromotionRequest extends FormRequest
     {
         return [
             'nome' => 'required|string|max:191',
-            'abbr' => 'required|string|max:191'
+            'abbr' => 'required|string|max:191',
+            'datainizio' => 'required|date_format:d/m/Y H:i',
+            'datafine' => 'required|date_format:d/m/Y H:i',
+            'tipologiaskyservice' => 'required|string|max:191',
         ];
     }
 }
