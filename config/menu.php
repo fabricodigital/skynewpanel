@@ -107,7 +107,7 @@ return [
                 [
                     'type' => 'link',
                     'title' => "__('Order promo')",
-                    'icon' => 'glyphicon glyphicon-file',
+                    'icon' => 'glyphicon glyphicon-th-list',
                     'route' => 'admin.promotions.index',
                     'uri_segments' => ['promotions'],
                 ],
