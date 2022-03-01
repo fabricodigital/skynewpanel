@@ -34,7 +34,7 @@
     </div>
 
 
-    <script>
+    <script type="text/javascript">
         var dragSrcEl = null;
 
         function handleDragStart(e) {
