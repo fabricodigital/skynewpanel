@@ -49,7 +49,7 @@
     </div>
 
 
-    <script type="text/javascript">
+    <script type="application/javascript">
         $(document).ready(function () {
             var dropIndex;
             $("#image-list").sortable({
