@@ -93,7 +93,7 @@ return [
                 [
                     'type' => 'link',
                     'title' => "__('Search')",
-                    'icon' => 'fa-user-circle-o',
+                    'icon' => 'glyphicon glyphicon-zoom-in',
                     'route' => 'admin.finclient',
                     'uri_segments' => [''],
                 ],
