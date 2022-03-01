@@ -23,6 +23,14 @@
         </div>
     </div>
 
+
+    <script>
+        $("#image-list").sortable({
+            update: function(event, ui) {
+                dropIndex = ui.item.index();
+            }
+        });
+    </script>
 @stop
 
 
