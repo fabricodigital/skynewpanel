@@ -173,8 +173,9 @@ class PromotionController extends Controller
 
     public function orderPromotion()
     {
-         $promotions = Promotion::query()->where('datafine','>=', date('Y-m-d'))->get();
+        $promotions = Promotion::query()->where('datafine','>=', date('Y-m-d'))->get();
+        $promotionsCount = Promotion::query()->where('datafine','>=', date('Y-m-d'))->count();
 
-         return view('admin.promotions.order',compact('promotions'));
+         return view('admin.promotions.order',compact('promotions','promotionsCount'));
     }
 }

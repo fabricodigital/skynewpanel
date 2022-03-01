@@ -21,7 +21,9 @@
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="row">
-
+                <div class="pull-right">
+                    {{$pomotionsCount}}
+                </div>
                 <div class="col-lg-10"  id="image-list" >
                     @foreach($promotions as $p)
                         <div class="alert alert-success lis" id="img{{$p->id}}" draggable="true" role="alert" style=" min-height: 72px ;border: 4px solid rgba(11, 11, 11, 0.4) !important;background-color: transparent !important;color: black !important;">
