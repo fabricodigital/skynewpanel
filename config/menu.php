@@ -100,7 +100,7 @@ return [
                 [
                     'type' => 'link',
                     'title' => "__('Promotions')",
-                    'icon' => 'fa-user-circle-o',
+                    'icon' => 'glyphicon glyphicon-file',
                     'route' => 'admin.promotions.index',
                     'uri_segments' => ['promotions'],
                 ],
