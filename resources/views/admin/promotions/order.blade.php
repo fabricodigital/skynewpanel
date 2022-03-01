@@ -7,7 +7,7 @@
     @include('partials._content-heading', ['title' => App\Models\Admin\Promotion::getTitleTrans()])
 
     @include('partials._alerts')
-    <style>
+    <style type="text/css">
         [draggable] {
             -moz-user-select: none;
             -khtml-user-select: none;
